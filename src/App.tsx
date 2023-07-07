@@ -8,6 +8,7 @@ import { Input } from "./components/Input";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import { UseState } from "./components/hooks/UseState";
+import { UseRefCompo } from "./components/hooks/useRefCompo";
 
 function App() {
   const person = {
@@ -46,6 +47,7 @@ function App() {
       <Button handleClick={clickEvent} /> <br />
       <Input changeInput={changeInput} />
       <UseState />
+      <UseRefCompo />
     </Container>
   );
 }
