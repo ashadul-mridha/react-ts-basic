@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import { Input } from "./components/Input";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import { UseState } from "./components/hooks/UseState";
 
 function App() {
   const person = {
@@ -44,6 +45,7 @@ function App() {
       <PersonList personList={personList} />
       <Button handleClick={clickEvent} /> <br />
       <Input changeInput={changeInput} />
+      <UseState />
     </Container>
   );
 }
